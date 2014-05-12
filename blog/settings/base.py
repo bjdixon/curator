@@ -13,10 +13,14 @@ PROJECT_MODULE = 'blog'
 ROOT_URLCONF = '%s.urls' % PROJECT_MODULE
 
 INSTALLED_APPS = list(INSTALLED_APPS) + [
+	'django.contrib.admin',
+	'django.contrib.messages',
     # Application base, containing global templates.
     '%s.base' % PROJECT_MODULE,
     # Example code. Can (and should) be removed for actual projects.
     '%s.examples' % PROJECT_MODULE,
+	'%s.feeds' % PROJECT_MODULE,
+	'south',
 ]
 
 # Note! If you intend to add `south` to INSTALLED_APPS,
@@ -39,7 +43,7 @@ JINGO_EXCLUDE_APPS = (
 
 # BrowserID configuration
 AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend',
+	'django.contrib.auth.backends.ModelBackend',
     'django_browserid.auth.BrowserIDBackend',
 )
 
@@ -51,6 +55,7 @@ LOGIN_REDIRECT_URL_FAILURE = '/'
 TEMPLATE_CONTEXT_PROCESSORS += (
     'django_browserid.context_processors.browserid',
 )
+
 
 # Should robots.txt deny everything or disallow a calculated list of URLs we
 # don't want to be crawled?  Default is false, disallow everything.

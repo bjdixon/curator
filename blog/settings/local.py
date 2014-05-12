@@ -4,7 +4,7 @@
 from . import base
 
 # To extend any settings from settings/base.py here's an example:
-#INSTALLED_APPS = base.INSTALLED_APPS + ['debug_toolbar']
+# INSTALLED_APPS = base.INSTALLED_APPS + ['debug_toolbar']
 
 DATABASES = {
     'default': {
@@ -32,7 +32,7 @@ DATABASES = {
 
 # Recipients of traceback emails and other notifications.
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+	# ('Name', 'Email'),
 )
 MANAGERS = ADMINS
 
@@ -46,7 +46,7 @@ DEV = True
 
 # By default, BrowserID expects your app to use http://127.0.0.1:8000
 # Uncomment the following line if you prefer to access your app via localhost
-# SITE_URL = 'http://localhost:8000'
+SITE_URL = 'http://localhost:8000'
 
 # Playdoh ships with Bcrypt+HMAC by default because it's the most secure.
 # To use bcrypt, fill in a secret HMAC key. It cannot be blank.
@@ -83,4 +83,4 @@ ENGAGE_ROBOTS = True
 
 # Uncomment this line if you are running a local development install without
 # HTTPS to disable HTTPS-only cookies.
-#SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
