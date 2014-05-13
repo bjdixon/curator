@@ -18,11 +18,9 @@ When it does you'll install it like this:
 
 Includes:
 
-playdoh
-
-[django][django]
-[playdoh][gh-playdoh]
-[docs][docs]
+- [django][django]
+- [playdoh][gh-playdoh]
+- [docs][docs]
 
 [django]: http://www.djangoproject.com/
 [gh-playdoh]: https://github.com/mozilla/playdoh
