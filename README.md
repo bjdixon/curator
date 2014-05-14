@@ -21,10 +21,16 @@ Includes:
 - [django][django]
 - [playdoh][gh-playdoh]
 - [docs][docs]
+- [south][south]
+- [feedparser][feedparser]
+- [django-request][django-request]
 
 [django]: http://www.djangoproject.com/
 [gh-playdoh]: https://github.com/mozilla/playdoh
 [docs]: http://playdoh.rtfd.org/
+[django-request]: https://github.com/kylef/django-request
+[south]: http://bitbucket.org/andrewgodwin/south/
+[feedparser]: https://code.google.com/p/feedparser/
 
 
 License
