@@ -1,0 +1,7 @@
+feeds will hold a list of rss feeds
+items will hold a list of parsed items that were linked to in the rss feeds
+articles will hold the finished edited articles, each one based on an item
+
+need to schedule tasks to check feeds for new items. 
+
+saved articles should be pushed out to twitter
