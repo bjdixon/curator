@@ -5,6 +5,7 @@ from django.utils import timezone
 FEED_TYPES = (
 	('News', 'News'), 
 	('Youtube', 'Youtube'),
+    ('Tumblr', 'Tumblr'),
 )
 
 
