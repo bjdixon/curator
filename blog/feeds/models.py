@@ -3,16 +3,14 @@ from django.utils import timezone
 
 
 FEED_TYPES = (
-	('News', 'News'), 
-	('Youtube', 'Youtube'),
+    ('News', 'News'), 
+    ('Youtube', 'Youtube'),
     ('Tumblr', 'Tumblr'),
 )
 
 
 class Feed(models.Model):
-	title = models.CharField(max_length=140)
-	url = models.URLField()
-	type_of_feed = models.CharField(max_length=32, choices=FEED_TYPES)
-	last_checked = models.DateTimeField(default=timezone.now)
-
-
+    title = models.CharField(max_length=140)
+    url = models.URLField()
+    type_of_feed = models.CharField(max_length=32, choices=FEED_TYPES)
+    last_checked = models.DateTimeField(default=timezone.now)
