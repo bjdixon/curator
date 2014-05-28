@@ -1,4 +1,3 @@
-Clean up white space. Editor was putting in tabs. Need to replace with spaces.
 
 feeds will hold a list of rss feeds
 items will hold a list of parsed items that were linked to in the rss feeds

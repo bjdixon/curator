@@ -3,7 +3,7 @@ from . import models
 
 
 class ItemAdmin(admin.ModelAdmin):
-	pass
+    pass
 
 
 admin.site.register(models.Item, ItemAdmin)

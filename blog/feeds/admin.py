@@ -3,7 +3,7 @@ from . import models
 
 
 class FeedAdmin(admin.ModelAdmin):
-	pass
+    pass
 
 
 admin.site.register(models.Feed, FeedAdmin)
