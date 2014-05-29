@@ -24,6 +24,8 @@ Includes:
 - [south][south]
 - [feedparser][feedparser]
 - [django-request][django-request]
+- BeautifulSoup4
+- Bleach
 
 [django]: http://www.djangoproject.com/
 [gh-playdoh]: https://github.com/mozilla/playdoh
